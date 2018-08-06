@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Modal</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section class="modal">
+		<div class="modal-body plans">
+			<div class="plan">
+				<h3 class="plan-title">Basic</h3>
+				<div class="plan-img">
+					<img src="basic.svg" alt="" class="plan-img">
+				</div>
+				<span class="plan-price monthly">8</span>
+				<p class="plan-text">
+					Our <strong>Basic Package</strong> is appropriate for individuals just getting started online. This package is great for personal blogs and project websites.
+				</p>
+			</div>
+			<div class="plan">
+				<h3 class="plan-title">Pro</h3>
+				<div class="plan-img">
+					<img src="pro.svg" alt="" class="plan-img">
+				</div>
+				<span class="plan-price monthly">14</span>
+				<p class="plan-text">
+					Our <strong>Pro Package</strong> is appropriate for most blogs and small business websites looking for a website on their own custom domain.
+				</p>
+			</div>
+			<div class="plan">
+				<h3 class="plan-title">Advanced</h3>
+				<div class="plan-img">
+					<img src="business.svg" alt="" class="plan-img">
+				</div>
+				<span class="plan-price monthly">20</span>
+				<p class="plan-text">
+					Our <strong>Advanced Package</strong> is great for more sophisticated websites requiring multiple editors and more robust site structures.
+				</p>
+			</div>
+			<div class="plan">
+				<h3 class="plan-title">Business</h3>
+				<div class="plan-img">
+					<img src="advanced.svg" alt="" class="plan-img">
+				</div>
+				<span class="plan-price monthly">30</span>
+				<p class="plan-text">
+					Our <strong>Business Package</strong> is perfect for all size business websites that need FAQs and data collection functionality.
+				</p>
+			</div>
+			<div class="plan">
+				<h3 class="plan-title">Community</h3>
+				<div class="plan-img">
+					<img src="community.svg" alt="" class="plan-img">
+				</div>
+				<span class="plan-price monthly">50</span>
+				<p class="plan-text">
+					Our <strong>Community Package </strong> is great for large projects seeking to form communities and connect with their audiences.
+				</p>
+			</div>
+		</div>
+		<div class="modal-footer features">
+			<div class="feat">
+				<h3 class="feat-title">True Cloud Hosting</h3>
+				<p class="feat-text">
+					Every Squarespace site is hosted using our cloud architecture - which means immediate scaling and no sharing a system with anyone else.
+				</p>
+			</div>
+			<div class="feat">
+				<h3 class="feat-title">Visual Style Designer</h3>
+				<p class="feat-text">
+					Squarespace sites come standard with and ultra-flexible style designer you can use to paint every pixel of your site to perfection.
+				</p>
+			</div>
+			<div class="feat">
+				<h3 class="feat-title">Deep Statistics</h3>
+				<p class="feat-text">
+					Squarespace sites come standard with and integrated statistics system, so you can tell what's happening on your site.
+				</p>
+			</div>
+			<div class="feat">
+				<h3 class="feat-title">Content Management</h3>
+				<p class="feat-text">
+					Squarespace ships with 20+ powerful modules. Everything from a blog package to form builders are already integrated. No plugins required.
+				</p>
+			</div>
+		</div>
+	</section>
+	<button class="button">Plans</button>
+	
+	<script type="text/javascript">
+		let botao = document.querySelector(".button");
+		let modal = document.querySelector(".modal");
+		let blop = new Audio()
+		blop.src = "blop.mp3";
+
+		botao.onclick = abrirModal;
+
+		function abrirModal(){
+			modal.classList.toggle("show");
+			blop.play();
+		}
+	</script>
+</body>
+</html>
